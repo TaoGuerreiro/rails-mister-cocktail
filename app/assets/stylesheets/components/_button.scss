@@ -1,13 +1,16 @@
 .button {
-  text-decoration: none;
   font-size: 18px;
   border-radius: 5px;
   background-color: black;
   border: solid black 1px;
   color: white;
   font-weight: 100;
+  padding:5px;
+  a {
+    text-decoration: none;
+  }
   &:hover {
-    background-color: white;
-    color: black;
+    background-color: rgba(0,0,0,0);
+    color: white;
   }
 }
