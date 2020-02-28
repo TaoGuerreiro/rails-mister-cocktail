@@ -2,5 +2,16 @@
   background-image: url("https://images.unsplash.com/photo-1508253730651-e5ace80a7025?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   position: center;
   height: 100vh;
-  background-color: rgba(0,0,0,0.1);
+}
+
+.filter {
+  background-color: rgba(0,0,0,0.8);
+  position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: white;
+  }
 }
