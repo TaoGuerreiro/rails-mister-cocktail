@@ -14,6 +14,9 @@
 .item-c {
   grid-area: footer;
 }
+.item-d {
+  grid-area: button-header;
+}
 
 .cards {
   display: grid;
@@ -22,14 +25,42 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   grid-template-areas:
-    "header header header header"
+    "button-header header header button-header"
     "card card card card"
     "footer footer footer footer";
 }
 
 .header {
+  z-index: 6;
+  padding: 10px;
+  background-color: #130909;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  h1 {
+    color: white;
+  }
+}
+.button-header {
+  z-index: 6;
+  padding: 10px;
+  background-color: #130909;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  h1 {
+    color: white;
+  }
+}
 
+body {
+  margin: 0;
+  background-color: #130909;
+  color: white;
 }

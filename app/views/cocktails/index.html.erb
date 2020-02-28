@@ -1,7 +1,8 @@
 <%= render '/shared/banner' %>
 <div class="main-container">
   <div class="header"><h1>Let's discover new ways to be drunk!</h1></div>
-  <div class="cards">
+   <div class="button-header"> <%= link_to "Add en cocktail", new_cocktail_path, class: "button"  %> </div>
+    <div class="cards">
     <% @cocktails.each do |cocktail| %>
       <div class="card " style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('<%= cocktail.photo.attached? ? cl_image_path(cocktail.photo.key, height: 300, width: 400, crop: :fill) : "https://lh3.googleusercontent.com/proxy/g386gt4nYm5poyFPEUI_3-5hCiZJTLTd3y4GSMHg3F2ZH4ZK7VLpTNwYvsFtlWH7pgWp4qm7i5uCxIIVzv1NAav1S0LCPIoJVn1CFWAgtqKfHTJ9bndgDb0cnS6wjiWcx3c-fj4jaBRB4d8" %>')">
 
@@ -10,5 +11,5 @@
       </div>
     <% end %>
   </div>
-  <%= link_to "Add en cocktail", new_cocktail_path %>
+
 </div>
